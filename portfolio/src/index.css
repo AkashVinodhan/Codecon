@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: #13191e;
+    --secondary-color: #dccac9;
+    --accent-color: #ac9ced;
+    --primary-light-color: #ffffff;
+    --secondary-light-color: #000000;
+  }
+  body {
+    @apply font-[Open+Sans];
+  }
+  li {
+    @apply px-6;
+    @apply cursor-pointer;
+  }
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 210px;
+}
+
+.content-div:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--accent-color)
+  ) !important;
+}
